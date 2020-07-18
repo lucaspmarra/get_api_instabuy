@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBuy</title>
+    <link rel="shortcut icon" href="./icons/Spotify_Icon_RGB_White.png" type="image/x-icon">
+    <!-- imports -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+
+    <!-- /imports-->
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container navbar-black" uk-navbar style="position: relative; z-index: 980;">
+            <!-- LEFT -->
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo uk-visible@m instabuy_logo" href="#"><img
+                        src="/logos/instabuy_logo.png" alt=""></a>
+                <a class="uk-navbar-item uk-logo uk-hidden@m instabuy_logo_mobile" href="#"><img
+                        src="/logos/instabuy_logo.png" alt=""></a>
+
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+
+                </ul>
+            </div>
+            <!-- btn menu mobile -->
+            <div class="uk-navbar-right">
+                <!--off-canvas btn em mobile com uk-hidden@m -->
+                <a class="uk-navbar-toggle uk-hidden@m" href="#" uk-toggle="target: #offcanvas-nav-primary">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- OFF-CANVAS NAVBAR -->
+    <nav id="offcanvas-nav-primary" uk-offcanvas="overlay: false; mode: push; flip: true">
+        <!-- offcanvas setting  -->
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column navbar-black">
+            <!-- offcanvas content -->
+            <!-- logo -->
+            <a class="uk-align-center uk-logo" href="#"><img src="./logos/instabuy_logo.png" alt="Logo Spotify"></a>
+            <!-- /logo -->
+            <!-- nav menu -->
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+
+
+            </ul>
+            <!-- /nav menu -->
+            <!-- infos -->
+            <footer class="uk-margin-large-top">
+                Desenvolvido por Lucas Marra
+            </footer>
+            <!-- /infos -->
+        </div>
+    </nav>
+    <!-- /OFF-CANVAS NAVBAR -->
+    <!-- /Navbar-->
+    <!--content-->
+    <!-- cards  recomendacao -->
+
+
+    <main class="wrapper">
+
+
+        <h3 class="uk-text-large uk-text-bold uk-text-center">Mostrar produtos</h3>
+        <button class="show-data uk-button uk-align-center uk-button-danger">Mostrar</button>
+
+
+        <h3 class="uk-text-large uk-text-bold uk-text-center">Produtos orgânicos</h3>
+
+        <div class="banner uk-child-width-1-3@s uk-grid-match uk-text-center" uk-grid>
+
+
+        </div>
+
+    </main>
+    <!-- /cards -->
+    <!-- arquivo para get da api -->
+    <script src="/js/request.js"></script>
+</body>
+
+</html>

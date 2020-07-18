@@ -1,0 +1,50 @@
+html {
+    background-color: #3b444b;
+}
+
+
+.instabuy_logo {
+    width: 150px;
+    padding: 0rem 1.5rem 0rem;
+}
+
+.instabuy_logo_mobile {
+    width: 180px;
+    padding: 0rem 1.5rem 0rem;
+}
+
+.navbar-black {
+    background-color: #232b2b !important;
+}
+
+.navbar-black li a {
+    color: white;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navbar-black li a:hover {
+    transition-duration: .5s;
+    color: #F8905F;
+    border-bottom: 4px solid #F8905F;
+
+}
+
+.uk-text-bold {
+    color: white;
+    font-size: 32px;
+
+}
+
+.uk-text-bold:hover {
+    color: white;
+    font-size: 36px;
+    transition-duration: .5s;
+    color: #F8905F;
+}
+
+.wrapper {
+    margin-left : 10%;
+    margin-right : 10%;
+    }
