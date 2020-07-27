@@ -44,7 +44,8 @@ html {
     color: #F8905F;
 }
 
-.wrapper {
-    margin-left : 10%;
-    margin-right : 10%;
-    }
+
+
+.uk-button-danger {
+    background-color:#F8905F;
+}
