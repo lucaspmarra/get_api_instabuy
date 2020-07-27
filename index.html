@@ -20,7 +20,6 @@
 <body>
 
     <!-- navbar -->
-
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container navbar-black" uk-navbar style="position: relative; z-index: 980;">
             <!-- LEFT -->
@@ -73,8 +72,6 @@
     <!-- /OFF-CANVAS NAVBAR -->
     <!-- /Navbar-->
     <!--content-->
-    <!-- cards  recomendacao -->
-
 
     <main class="wrapper">
 
@@ -92,9 +89,25 @@
             </section>
 
             <section v-else>
-                <div v-if="loading">Carregando...</div>
+                <div v-if="loading">Carregando a lista de produtos...</div>
                 <div v-else>
-                    {{collection_items1}}
+                    <ul v-for="(collectionItem, index) in collection_items" :key="index">
+                        <li>
+                            {{collectionItem.title}}
+                            <ul v-for="(item, index) in collectionItem.items" :key="index">
+                                <li>
+                                    {{item.name}}
+                                    <ul v-for="(itemPrice, index) in item.prices" :key="index">
+                                        <li>
+                                            {{$formatCurrencyBrazil(itemPrice.price)}} |
+                                            {{itemPrice.title}}
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </div>
             </section>
 
