@@ -5,5 +5,24 @@
 ![](https://img.shields.io/badge/CSS--brightgreen)   
 ![](https://img.shields.io/badge/JavaScript-fetch-brightgreen)  
 
-# Desenvolvimento em andamento
-Um preview pode ser visto em [Get Api InstaBuy](https://lucaspmarra.github.io/get_api_instabuy/ "Get Api InstaBuy").
+# Estrutura do projeto:
+```
+.
+├── css
+│   └── style.css
+├── js
+│   ├── app.js
+│   └── request.js
+├── logos
+│   └── instabuy_logo.png
+├── index.html
+└── README.md
+```
+Onde:
+index.html representa a interface principal.  
+app.js representa o uso do axios (não feito).  
+request.js representa o uso do fetch().
+
+# Compatibilidade
+
+![](https://i.imgur.com/st3OVWD.png)
